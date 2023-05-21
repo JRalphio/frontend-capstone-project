@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
+@import url(https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Nav.js */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbars {
   display: flex;
-  flex-direction: column;
+  height: 15vh;
+  margin: 0 15vw;
+}
+
+.nav_logo {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 30%;
 }
 
-.App-link {
-  color: #61dafb;
+.nav_links {
+  width: 100%;
+  padding: 0 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav_links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.nav_links li {
+  list-style-type: none;
+  /* flex: 1; */
+}
+
+.nav_links a {
+  font-family: "Markazi Text", serif;
+  font-size: 22px;
+}
+
+/* Footer.js */
+
+footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  bottom: 0;
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer_section {
+  padding: 0 5% 0 0%;
+  top: 0;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
