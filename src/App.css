@@ -65,3 +65,9 @@ footer h2 {
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+/* Main.js */
+
+main {
+  height: 65vh;
+}
