@@ -1,36 +1,48 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../icons-assets/Logo.svg";
-import "../App.css";
-
+import "../index.css";
 const Nav = () => {
   return (
     <div className="navbars">
-      <nav className="nav_logo">
+      <nav className="nav_logo ">
         <img src={Logo} alt="Logo" />
       </nav>
-      <nav className="nav_links">
+      <nav className="nav_links ">
         <ul>
           <li>
-            <a href="#home"> Home</a>
+            <Link to="/" className="link">
+              <h1>Home</h1>
+            </Link>
           </li>
           <li>
-            <a href="#about"> About</a>
+            <Link to="/about" className="link">
+              <h1>About</h1>
+            </Link>
           </li>
           <li>
-            <a href="#menu"> Menu</a>
+            <Link to="/menu" className="link">
+              <h1>Menu</h1>
+            </Link>
           </li>
           <li>
-            <a href="#reservations"> Reservations</a>
+            <Link to="/" className="link">
+              <h1>Reservations</h1>
+            </Link>
           </li>
           <li>
-            <a href="#order-online"> Order Online</a>
+            <Link to="/" className="link">
+              <h1>Order Online</h1>
+            </Link>
           </li>
           <li>
-            <a href="#login"> Login</a>
+            <Link to="/" className="link">
+              <h1>Login</h1>
+            </Link>
           </li>
         </ul>
       </nav>
     </div>
   );
 };
-
 export default Nav;

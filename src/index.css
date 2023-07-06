@@ -1,3 +1,12 @@
+@import url(https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap);
+
+* {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* HTML rules */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -7,7 +16,309 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Nav.js */
+.navbars {
+  display: flex;
+  height: 15vh;
+  margin: 0 15vw;
+}
+.nav_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+.nav_links {
+  width: 100vw;
+  padding: 0 5%;
+}
+.nav_links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0;
+}
+.nav_links li {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.nav_links h1 {
+  list-style-type: none;
+  font-family: "Markazi Text", serif;
+  font-size: 22px;
+}
+
+/* CallToAction.js */
+
+.call_to_action {
+  height: 400px;
+  width: 100vw;
+  background-color: #495e57;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.call_to_action_hero {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 100px;
+  width: 50vw;
+}
+
+.call_to_action h1 {
+  margin: 0px 0px 0px 5vw;
+  color: white;
+}
+
+.call_to_action h2 {
+  margin: 0px 0px 0px 5vw;
+  color: white;
+}
+
+.call_to_action h3 {
+  font-weight: lighter;
+  margin: 10px 0px 0px 5vw;
+  width: 40vw;
+  color: white;
+}
+
+.call_to_action button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f4ce14;
+  color: #000000;
+  text-decoration: double;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin: 20px 0px 0px 5vw;
+}
+
+.call_to_action_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50vw;
+  height: 350px;
+  overflow: hidden;
+  margin: 0px 5vw 0px 0px;
+}
+
+.call_to_action_image img {
+  width: 45vw;
+}
+
+/* Specials */
+
+.specials {
+  height: auto;
+  width: 100vw;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0px;
+}
+
+.specials h1 {
+  margin: 20px 0px 0px 5vw;
+}
+
+.specials h2 {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f4ce14;
+  color: #000000;
+  text-decoration: double;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 4px;
+  margin: 20px 0px 20px 5vw;
+}
+
+.specials_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px 5vw 0px 5vw;
+}
+
+.specials_individual_card {
+  height: 450px;
+  width: 400px;
+  background-color: #edefee;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+.specials_individual_card img {
+  width: 400px;
+  height: 250px;
+}
+
+.specials_individual_card h3 {
+  color: #000000;
+  margin: 0px 0px 0px 20px;
+}
+
+.specials_individual_card h4 {
+  color: #000000;
+  margin: 10px 0px 0px 20px;
+  font-weight: 400;
+}
+
+.specials_individual_card button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f4ce14;
+  color: #000000;
+  text-decoration: double;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin: 10px 0px 0px 20px;
+}
+
+/* Customers Say */
+
+.customers_say {
+  margin-bottom: 5vh;
+}
+
+.customers_say_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px 5vw 0px 5vw;
+}
+
+.customers_say h1,
+h3,
+h4 {
+  color: #333333;
+}
+.customers_say h1 {
+  margin: 20px 0px 0px 5vw;
+}
+.customers_say_individual_card {
+  height: 200px;
+  width: 300px;
+  background-color: #edefee;
+  border-radius: 16px;
+  margin-top: 20px;
+  padding: 10px 10px 0 10px;
+}
+
+.customers_say_individual_card h3 {
+  margin: 10px 0px 10px 0px;
+}
+
+/* Chicago */
+
+.chicago {
+  background-color: #f4ce14;
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.chicago_adrian_and_mario {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 100px;
+  width: 50vw;
+}
+
+.chicago h1 {
+  margin: 0px 0px 0px 5vw;
+  color: #333333;
+}
+
+.chicago h2 {
+  margin: 0px 0px 0px 5vw;
+  color: #333333;
+}
+
+.chicago h3 {
+  font-weight: lighter;
+  margin: 10px 0px 0px 5vw;
+  width: 40vw;
+  color: #333333;
+  font-weight: 400;
+}
+
+.chicago_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50vw;
+  height: 350px;
+  overflow: hidden;
+  margin: 0px 5vw 0px 0px;
+}
+
+.chicago_image img {
+  height: 300px;
+  width: auto;
+}
+
+/* Footer.js */
+
+.footer {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  justify-content: space-around;
+  bottom: 0;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.footer_logo {
+  display: flex;
+  align-items: center;
+}
+.footer_section {
+  padding: 0 5% 0 0;
+  top: 0;
+}
+
+.footer_section_title {
+  margin-bottom: 50px;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+.footer a {
+  text-decoration: none;
+}
+
+.footer h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 0;
 }
