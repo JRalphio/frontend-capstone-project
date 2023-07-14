@@ -26,17 +26,17 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link to="/" className="link">
+            <Link to="/reservations" className="link">
               <h1>Reservations</h1>
             </Link>
           </li>
           <li>
-            <Link to="/" className="link">
+            <Link to="/order" className="link">
               <h1>Order Online</h1>
             </Link>
           </li>
           <li>
-            <Link to="/" className="link">
+            <Link to="/login" className="link">
               <h1>Login</h1>
             </Link>
           </li>

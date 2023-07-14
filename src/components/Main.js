@@ -1,17 +1,24 @@
 import { Routes, Route } from "react-router-dom";
 import Homepage from "./Homepage";
+import CallToAction from "./CallToAction";
+import BookingPage from "./BookingPage";
+import ConfirmedBooking from "./ConfirmedBooking";
 import Specials from "./Specials";
-import Chicago from "./Chicago";
 
-const Main = () => {
+export default function Main() {
   return (
-    // Routes the Nav components to the appropriate section/page
     <Routes>
-      <Route path="/" element={<Homepage />}></Route>
-      <Route path="/menu" element={<Specials />}></Route>
-      <Route path="/about" element={<Chicago />}></Route>
+      <Route path="/" element={<Homepage />} />
+
+      <Route path="/about" element={<CallToAction />} />
+
+      <Route path="/menu" element={<Specials />} />
+      <Route path="/confirmation" element={<ConfirmedBooking />} />
+
+      <Route path="/reservations" element={<BookingPage />} />
+
+      <Route path="/order" element={<Homepage />} />
+      <Route path="/login" element={<Homepage />} />
     </Routes>
   );
-};
-
-export default Main;
+}

@@ -286,6 +286,15 @@ h4 {
   width: auto;
 }
 
+/* Booking Page */
+
+.booking_form {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 5vh 0 5vh 0;
+}
+
 /* Footer.js */
 
 .footer {
