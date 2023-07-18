@@ -286,13 +286,70 @@ h4 {
   width: auto;
 }
 
-/* Booking Page */
+/* BookingPage and BookingForm*/
 
-.booking_form {
+.booking_page {
   width: 100vw;
   display: flex;
   justify-content: center;
   padding: 5vh 0 5vh 0;
+}
+
+.booking_form {
+  display: grid;
+  gap: 15px;
+  width: 30vw;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  justify-items: center;
+}
+
+.booking_form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.booking_form label {
+  font-weight: bold;
+}
+
+.booking_form input[type="text"],
+.booking_form input[type="email"],
+.booking_form input[type="tel"],
+.booking_form input[type="date"],
+.booking_form input[type="number"],
+.booking_form select,
+.booking_form textarea {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure correct sizing with padding and border */
+}
+
+.booking_form textarea {
+  height: 10vh;
+}
+
+.booking_form select {
+  height: 36px;
+}
+
+.booking_form textarea {
+  resize: vertical;
+}
+
+.booking_form input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.booking_form input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
 /* Footer.js */
